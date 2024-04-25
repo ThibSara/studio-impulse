@@ -62,7 +62,7 @@ export function Resources() {
                 <p className="mt-4 text-lg tracking-tight text-slate-700">
                     We leverage industry-leading tools and technologies to streamline our
                     workflow, collaborate effectively, and deliver high-quality websites
-                    that exceed our clients' expectations.
+                    that exceed our clients&apos; expectations.
                 </p>
             </Container>
             <Container className="mt-16">

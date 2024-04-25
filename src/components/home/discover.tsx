@@ -25,7 +25,7 @@ export function Discover() {
                     Unveiling your digital potential through meticulous discovery.
                 </p>
                 <p className="mt-4 text-lg tracking-tight text-slate-700">
-                    At impulse, we believe that every successful website starts with a deep understanding of our clients' businesses. Our discovery process is designed to uncover the essence of your brand, target audience, and unique selling points.
+                    At impulse, we believe that every successful website starts with a deep understanding of our clients&apos; businesses. Our discovery process is designed to uncover the essence of your brand, target audience, and unique selling points.
                 </p>
                 <div className="mt-8">
                     <div className="flex items-center">
@@ -53,7 +53,7 @@ export function Discover() {
                         <div className="ml-6">
                             <h3 className="text-lg font-medium text-slate-900">User Research and Analysis</h3>
                             <p className="mt-2 text-base text-slate-700">
-                                Through a combination of surveys, interviews, and data analysis, we gain valuable insights into your target audience's behaviors, preferences, and pain points. This knowledge informs our design decisions and ensures a user-centric approach.
+                                Through a combination of surveys, interviews, and data analysis, we gain valuable insights into your target audience&apos;s behaviors, preferences, and pain points. This knowledge informs our design decisions and ensures a user-centric approach.
                             </p>
                         </div>
                     </div>

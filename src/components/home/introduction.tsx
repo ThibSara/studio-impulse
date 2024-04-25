@@ -23,7 +23,7 @@ export function Introduction() {
               </p>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                 <p>
-                  With over a decade of experience in interaction design, we excel at crafting tools and websites that are fast, performant, and tailored to our clients' needs. Our team of skilled designers and developers work closely with clients to understand their goals and deliver solutions that exceed expectations.
+                  With over a decade of experience in interaction design, we excel at crafting tools and websites that are fast, performant, and tailored to our clients&apos; needs. Our team of skilled designers and developers work closely with clients to understand their goals and deliver solutions that exceed expectations.
                 </p>
                 <p className="mt-10">
                   We take pride in our ability to create seamless user experiences that engage and delight. By leveraging the latest technologies and design trends, we ensure that every project we undertake is visually stunning, highly functional, and optimized for performance.

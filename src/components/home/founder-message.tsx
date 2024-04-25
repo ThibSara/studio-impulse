@@ -35,14 +35,14 @@ export function FounderMessage() {
                     </div>
                     <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
                         <SectionHeading number="5" id="founder-message-title">
-                            Founder's Message
+                            Founder&apos;s Message
                         </SectionHeading>
                         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
                             <span className="block text-blue-600">Leonard Roussard –</span> Welcome to
                             impulse, where design meets innovation.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            As the founder of impulse, I've been passionate about web design
+                            As the founder of impulse, I&apos;ve been passionate about web design
                             and creating exceptional digital experiences for over a decade.
                             Our team of talented designers and developers has worked with a
                             diverse range of clients, from startups to established brands,

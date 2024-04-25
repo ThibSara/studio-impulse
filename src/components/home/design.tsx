@@ -51,7 +51,7 @@ export function Design() {
                 <p className="mt-4 text-lg tracking-tight text-slate-700">
                     At impulse, we follow a meticulous design process to create websites
                     that not only look great but also deliver exceptional user experiences.
-                    Here's how we approach website design:
+                    Here&apos;s how we approach website design:
                 </p>
             </Container>
             <Container className="mt-16">

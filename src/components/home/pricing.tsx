@@ -119,7 +119,7 @@ export function Pricing() {
                 </p>
                 <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
                     Our web design services are available in two different packages
-                    so you can pick the one that's right for you.
+                    so you can pick the one that&apos;s right for you.
                 </p>
             </Container>
             <div className="mx-auto mt-16 max-w-5xl lg:px-6">
