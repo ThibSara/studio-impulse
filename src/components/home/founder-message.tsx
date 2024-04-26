@@ -35,34 +35,32 @@ export function FounderMessage() {
                     </div>
                     <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
                         <SectionHeading number="5" id="founder-message-title">
-                            Founder&apos;s Message
+                            Founders Message
                         </SectionHeading>
-                        <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                        <p className="mt-8 mb-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
                             <span className="block text-blue-600">Leonard Roussard –</span> Welcome to
-                            impulse, where design meets innovation.
+                            Impulse, where design meets innovation.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            As the founder of impulse, I&apos;ve been passionate about web design
-                            and creating exceptional digital experiences for over a decade.
-                            Our team of talented designers and developers has worked with a
-                            diverse range of clients, from startups to established brands,
-                            helping them achieve their online goals and stand out in the
-                            digital landscape.
+
+                            I&apos;m Leonard, the founder of Impulse, and my journey into the world of design began at a young age,
+                            inspired by the seamless integration and intuitive interactions crafted by pioneers like Apple.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            At impulse, we believe that great design is not just about
-                            aesthetics, but also about functionality, usability, and
-                            performance. We strive to create websites that not only look
-                            stunning but also deliver seamless user experiences and drive
-                            meaningful results for our clients.
+                            At Impulse, we believe that exceptional design transcends mere aesthetics.
+                            It&apos;s about creating solutions that are not only visually appealing but are built with a profound understanding of
+                            functionality from the ground up. Our approach is holistic, ensuring that every aspect of the user experience is intuitive and efficient, guiding users from point A to B in the simplest way possible.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            As a thought leader in the industry, I regularly share my insights
-                            and expertise through conferences, workshops, and our blog. Our
-                            team stays at the forefront of web design trends and technologies
-                            to ensure that we deliver cutting-edge solutions to our clients.
+                            Drawing inspiration from industry leaders and trailblazers at companies like Vercel, we strive to merge cutting-edge front-end aesthetics with robust back-end architectures. This synergy allows us to deliver premium, bespoke web solutions that are meticulously tailored to enhance your workflows, automate tasks, and elevate your operational efficiency.
                         </p>
-                        <p className="mt-8">
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+                            We&apos;re not just about building what you think you need; we delve deeper, spending time with you to unearth and understand your true needs, crafting tools that are not only effective but also intuitively align with your business practices. At Impulse, your vision and our expertise combine to create digital experiences that push boundaries and set new standards in web development.
+                        </p>
+                        <p className="mt-6 text-lg tracking-tight text-slate-700">
+                            Let&apos;s build the future of web design together.
+                        </p>
+                        <p className="mt-0">
                             <Image src={founderSignature} alt="Leonard Roussard" />
                         </p>
                     </div>
