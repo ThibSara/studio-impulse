@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import clsx from 'clsx'
 import { Button } from '../ui/button'
-import { Menu } from 'lucide-react'
+import { ChevronsUpDown, Menu } from 'lucide-react'
+import { Link } from '../ui/link'
 
 const sections = [
     {
@@ -85,31 +86,31 @@ export function NavBar() {
                             {sections[mobileActiveIndex].title}
                         </span>
                         <Button
-                            className="-mr-1 ml-auto flex h-8 w-8 items-center justify-center"
+                            className="-mr-1 ml-auto"
                             aria-label="Toggle navigation menu"
+                            variant="ghost"
                         >
                             {/* Increase hit area */}
-                            <span className="absolute inset-0" />
-                            <Menu className="h-6 w-6 stroke-slate-700" />
+                            <ChevronsUpDown className="size-5" />
                         </Button>
                     </div>
                 </PopoverTrigger>
-                <PopoverContent className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
+                <PopoverContent align="start" className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur w-screen">
                     {sections.map((section, sectionIndex) => (
-                        <Button
+                        <Link
                             key={section.id}
                             asChild
-                            className="flex items-center px-4 py-1.5"
+                            className="flex items-center px-4 py-1.5 justify-start"
+                            variant='ghost'
+                            href={`#${section.id}`}
                         >
-                            <a href={`#${section.id}`}>
-                                <span aria-hidden="true" className="font-mono text-sm text-blue-600">
-                                    {(sectionIndex + 1).toString().padStart(2, "0")}
-                                </span>
-                                <span className="ml-4 text-base font-medium text-slate-900">
-                                    {section.title}
-                                </span>
-                            </a>
-                        </Button>
+                            <span aria-hidden="true" className="font-mono text-sm text-blue-600">
+                                {(sectionIndex + 1).toString().padStart(2, "0")}
+                            </span>
+                            <span className="ml-4 text-base font-medium text-slate-900">
+                                {section.title}
+                            </span>
+                        </Link>
                     ))}
                 </PopoverContent>
             </Popover>
@@ -123,7 +124,7 @@ export function NavBar() {
                             <a
                                 href={`#${section.id}`}
                                 className={clsx(
-                                    'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
+                                    'flex w-full flex-col items-center text-wrap text-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
                                     sectionIndex === activeIndex
                                         ? 'border-blue-600 bg-blue-50 text-blue-600 before:text-blue-600'
                                         : 'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900',
