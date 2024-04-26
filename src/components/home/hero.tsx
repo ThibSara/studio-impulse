@@ -8,7 +8,7 @@ export function HeroSection() {
         <FadeInStagger className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32" faster>
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <FadeIn className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                    <h1 className="font-display font-medium  text-5xl tracking-tight [text-wrap:balance] text-gray-900 sm:text-6xl">
+                    <h1 className="font-display font-semibold  text-5xl tracking-tight [text-wrap:balance] text-gray-900 sm:text-6xl">
                         We create stunning interfaces for your users
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
