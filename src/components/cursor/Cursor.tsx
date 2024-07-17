@@ -8,7 +8,6 @@ import styles from "./style.module.css";
 export const Cursor = () => {
   const { variant } = useCursor();
   const cursorVariantClass = variant === "buy" ? styles.buy : styles.default;
-  const cursorSize = 15;
 
   const mouse = {
     x: useMotionValue(0),
@@ -24,8 +23,8 @@ export const Cursor = () => {
 
   const manageMouseMove = (e: any) => {
     const { clientX, clientY } = e;
-    mouse.x.set(clientX - cursorSize / 2);
-    mouse.y.set(clientY - cursorSize / 2);
+    mouse.x.set(clientX);
+    mouse.y.set(clientY);
   };
 
   useEffect(() => {
