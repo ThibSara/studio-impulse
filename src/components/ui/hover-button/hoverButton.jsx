@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./HoverButton.css";
+import "./hoverButton.css";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
