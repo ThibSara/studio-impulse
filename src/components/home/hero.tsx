@@ -3,7 +3,7 @@ import { ImageCard } from "@/components/home/image-card";
 import { Link } from "@/components/ui/link";
 import { ArrowRight } from "lucide-react";
 import { useCursor } from "./../cursor/CursorContext";
-import { HoverButton } from "./../ui/hover-button/HoverButton"; // Ensure correct import path
+import { HoverButton } from "./../ui/hover-button/hoverButton";
 
 export function HeroSection() {
   const { setVariant } = useCursor();
