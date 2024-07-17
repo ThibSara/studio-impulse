@@ -36,10 +36,10 @@ export function HeroSection() {
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-              Impulse combine l'UX design et le développement web pour offrir
-              des solutions digitales complètes. De l'idée à la mise en œuvre,
-              nous créons des expériences utilisateurs uniques et des produits
-              sur mesure.
+              Impulse combine l&apos;UX design et le développement web pour
+              offrir des solutions digitales complètes. De l&apos;idée à la mise
+              en œuvre, nous créons des expériences utilisateurs uniques et des
+              produits sur mesure.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <HoverButton href="/contact" />
