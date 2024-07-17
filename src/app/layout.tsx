@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import clsx from "clsx";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: {
-    template: '%s - Impulse Lab',
-    default: 'Impulse Lab - Designing the future of the web',
+    template: "%s - Impulse Lab",
+    default: "Impulse Lab - Designing the future of the web",
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -19,12 +17,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={clsx(
-      'h-full scroll-smooth  antialiased',
-      inter.className,
-    )}>
+    <html lang="en" className={clsx("h-full scroll-smooth antialiased")}>
+      <Head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,701,900,901&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>

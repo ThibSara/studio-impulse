@@ -1,0 +1,59 @@
+
+
+.card__img {
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__img>img {
+    width: 10rem;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card__grid_effect {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.card__grid_effect_tile {
+    position: relative;
+}
+
+.card__grid_effect_tile:before {
+    content: '';
+    color: #9580FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.3rem;
+    width: 0.3rem;
+    border-radius: 50%;
+    background: #9580FF;
+    transition: 500ms linear all;
+    box-shadow:
+        1 * 3rem 0 0 -0.3rem,
+        1 * -3rem 0 0 -0.3rem,
+        0 1 * -3rem 0 -0.3rem,
+        0 1 * 3rem 0 -0.3rem,
+        1 * 3rem 1 * 3rem 0 -0.45rem,
+        1 * 3rem 1 * -3rem 0 -0.45rem,
+        1 * -3rem 1 * 3rem 0 -0.45rem,
+        1 * -3rem 1 * -3rem 0 -0.45rem;
+}
+
+.card__grid_effect_tile:hover:before {
+    height: 3rem;
+    width: 3rem;
+    transition: 70ms linear all;
+}

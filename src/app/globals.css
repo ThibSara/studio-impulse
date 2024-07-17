@@ -1,7 +1,14 @@
+/* globals.css */
+
+/* Import the Satoshi font */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,701,900,901&display=swap');
+
+/* Tailwind base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -70,7 +77,10 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Satoshi', sans-serif;
+    /* Apply the Satoshi font to the body */
   }
 }
