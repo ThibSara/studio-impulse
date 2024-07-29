@@ -1,13 +1,23 @@
-// Cursor.js
 "use client";
 import { useEffect } from "react";
 import { useMotionValue, useSpring, motion } from "framer-motion";
 import { useCursor } from "./CursorContext";
 import styles from "./style.module.css";
 
-export const Cursor = () => {
+interface VariantClasses {
+  [key: string]: string;
+}
+
+const variantClasses: VariantClasses = {
+  default: styles.default,
+  title: styles.title,
+  subtitle: styles.subtitle,
+  section: styles.section,
+};
+
+export const Cursor: React.FC = () => {
   const { variant } = useCursor();
-  const cursorVariantClass = variant === "buy" ? styles.buy : styles.default;
+  const cursorVariantClass = variantClasses[variant] || styles.default;
 
   const mouse = {
     x: useMotionValue(0),

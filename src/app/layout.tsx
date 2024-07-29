@@ -3,6 +3,7 @@ import Head from "next/head";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import clsx from "clsx";
+import { NavBar } from "@/components/common/navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <NavBar />
           {children}
         </ThemeProvider>
       </body>

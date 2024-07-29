@@ -18,7 +18,6 @@ export default function LandingPage() {
         <Cursor />
         <HeroSection />
         <Introduction />
-        <NavBar />
         <Discover />
         <Design />
         <Resources />

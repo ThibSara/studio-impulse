@@ -1,71 +1,49 @@
-import { Container } from "@/components/Container";
-import { Card } from "./card/card";
-
-const stats = [
-  { label: "Projects completed", value: "500+" },
-  { label: "Years of experience", value: "10+" },
-  { label: "Satisfied clients", value: "200+" },
-];
+import { useCursor } from "./../cursor/CursorContext";
 
 export function Introduction() {
+  const { setVariant } = useCursor();
+
+  const handleMouseEnterTitle = () => {
+    setVariant("title");
+  };
+
+  const handleMouseEnterSubtitle = () => {
+    setVariant("subtitle");
+  };
+
+  const handleMouseLeave = () => {
+    setVariant("default");
+  };
+
   return (
-    <section
-      id="introduction"
-      aria-label="Introduction"
-      className="pb-16 pt-20 sm:pb-20 md:pt-36 lg:py-32"
-    >
-      <Card />
-      <Container className="text-lg tracking-tight text-slate-700">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 className="text-5xl font-medium tracking-tight text-gray-900 sm:text-5xl">
-            Who we are
-          </h2>
-          <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-            <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-              <p className="text-xl leading-8 text-gray-600">
-                At impulse, we are a Paris-based web design agency passionate
-                about creating stunning websites, user experiences, and
-                interfaces. We believe in functional design that puts the user
-                first, delivering intuitive and fluid interactions.
-              </p>
-              <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
-                <p>
-                  With over a decade of experience in interaction design, we
-                  excel at crafting tools and websites that are fast,
-                  performant, and tailored to our clients&apos; needs. Our team
-                  of skilled designers and developers work closely with clients
-                  to understand their goals and deliver solutions that exceed
-                  expectations.
-                </p>
-                <p className="mt-10">
-                  We take pride in our ability to create seamless user
-                  experiences that engage and delight. By leveraging the latest
-                  technologies and design trends, we ensure that every project
-                  we undertake is visually stunning, highly functional, and
-                  optimized for performance.
-                </p>
-              </div>
-            </div>
-            <div className="lg:flex lg:flex-auto lg:justify-center">
-              <dl className="w-64 space-y-8 xl:w-80">
-                {stats.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="flex flex-col-reverse gap-y-4"
-                  >
-                    <dt className="text-base leading-7 text-gray-600">
-                      {stat.label}
-                    </dt>
-                    <dd className="text-5xl font-semibold tracking-tight text-gray-900">
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
+    <section id="introduction" aria-label="Introduction" className="max-w-8xl">
+      <div className=" bg-[#07183B] mx-8 my-16 flex  rounded-3xl min-h-screen">
+        <div className="max-w-xl px-4 py-24">
+          <div className="font-medium text-3xl text-white sm:text-5xl lg:text-6xl">
+            Du design à la <br />
+            <span
+              onMouseEnter={handleMouseEnterTitle}
+              onMouseLeave={handleMouseLeave}
+              className="text-primary"
+            >
+              {" "}
+              conception
+            </span>
           </div>
         </div>
-      </Container>
+        <svg
+          width="150"
+          height="150"
+          viewBox="0 0 150 150"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M87.7551 12.7551C87.7551 5.71065 82.0444 0 75 0C67.9556 0 62.2449 5.71065 62.2449 12.7551V26.738L55.3364 14.5809C51.856 8.45631 44.0696 6.31278 37.945 9.79321C31.8203 13.2736 29.6768 21.0601 33.1572 27.1847L41.0187 41.0187L27.1847 33.1572C21.0601 29.6768 13.2737 31.8203 9.79323 37.9449C6.3128 44.0695 8.45633 51.856 14.5809 55.3364L26.738 62.2449H12.7551C5.71065 62.2449 0 67.9555 0 75C0 82.0444 5.71065 87.7551 12.7551 87.7551H26.738L14.5809 94.6636C8.45633 98.144 6.3128 105.93 9.79323 112.055C13.2737 118.18 21.0601 120.323 27.1847 116.843L41.0187 108.981L33.1572 122.815C29.6768 128.94 31.8203 136.726 37.9449 140.207C44.0696 143.687 51.856 141.544 55.3364 135.419L62.2449 123.262V137.245C62.2449 144.289 67.9556 150 75 150C82.0445 150 87.7551 144.289 87.7551 137.245V123.262L94.6636 135.419C98.144 141.544 105.93 143.687 112.055 140.207C118.18 136.726 120.323 128.94 116.843 122.815L108.981 108.981L122.815 116.843C128.94 120.323 136.726 118.18 140.207 112.055C143.687 105.93 141.544 98.144 135.419 94.6636L123.262 87.7551H137.245C144.289 87.7551 150 82.0444 150 75C150 67.9556 144.289 62.2449 137.245 62.2449H123.262L135.419 55.3364C141.544 51.856 143.687 44.0695 140.207 37.9449C136.726 31.8203 128.94 29.6768 122.815 33.1572L108.981 41.0187L116.843 27.1847C120.323 21.0601 118.18 13.2736 112.055 9.79321C105.93 6.31278 98.144 8.45631 94.6636 14.5809L87.7551 26.738V12.7551Z"
+            fill="#9580FF"
+          />
+        </svg>
+      </div>
     </section>
   );
 }
