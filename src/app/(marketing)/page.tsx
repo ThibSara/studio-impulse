@@ -10,6 +10,10 @@ import { Pricing } from "@/components/home/pricing";
 import { Resources } from "@/components/home/resources";
 import { Cursor } from "@/components/cursor/Cursor";
 import { CursorProvider } from "@/components/cursor/CursorContext";
+import { Stack } from "@/components/home/stack";
+import { About } from "@/components/home/about";
+import { Team } from "@/components/home/team";
+import { CTA } from "@/components/home/cta";
 
 export default function LandingPage() {
   return (
@@ -19,10 +23,10 @@ export default function LandingPage() {
         <HeroSection />
         <Introduction />
         <Discover />
-        <Design />
-        <Resources />
-        <Pricing />
-        <FounderMessage />
+        <Stack />
+        <About />
+        <Team />
+        <CTA />
       </CursorProvider>
     </div>
   );

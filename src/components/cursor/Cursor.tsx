@@ -13,6 +13,7 @@ const variantClasses: VariantClasses = {
   title: styles.title,
   subtitle: styles.subtitle,
   section: styles.section,
+  wireframe: styles.wireframe,
 };
 
 export const Cursor: React.FC = () => {
