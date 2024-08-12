@@ -2,13 +2,13 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Menu, X } from "lucide-react";
-import { Test } from "@/components/ui/test/Test";
+import { RoundLogo } from "@/components/ui/round-logo/roundLogo";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Accueil", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "Équipe", href: "#" },
+  { name: "Contact", href: "#" },
 ];
 
 export function NavBar() {
@@ -21,7 +21,7 @@ export function NavBar() {
         className="relative mx-auto flex max-w-7xl items-center justify-between p-6 sm:pt-10 lg:px-8 "
       >
         <div className="absolute mt-20">
-          <Test />
+          <RoundLogo />
         </div>
         <div className="flex lg:flex-1"></div>
         <div className="flex lg:hidden">

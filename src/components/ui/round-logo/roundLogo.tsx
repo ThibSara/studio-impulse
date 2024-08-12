@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Test.module.scss";
+import styles from "./RoundLogo.module.scss";
 
-export const Test: React.FC = () => {
+export const RoundLogo: React.FC = () => {
   return (
     <div>
       <a href="#" className={styles.link}>
