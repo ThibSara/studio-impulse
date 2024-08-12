@@ -3,7 +3,6 @@ import { GradientBackground } from "@/components/gradient-background";
 import { GridPattern } from "@/components/home/hero-grid-pattern";
 import { Logo } from "@/components/ui/icon";
 import Link from "next/link";
-import { Test } from "@/components/ui/test/Test";
 
 export default function MarketingLayout({
   children,
