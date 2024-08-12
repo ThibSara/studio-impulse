@@ -7,18 +7,21 @@ import { useRef } from "react";
 
 const people = [
   {
+    key: 1,
     title: "Developpement et retours",
     subtitle:
       "Nous développons votre projet avec Next.js, en organisant des réunions quotidiennes pour suivre l'avancement.",
     src: "/images/about/star.svg",
   },
   {
+    key: 2,
     title: "Déploiement en continu",
     subtitle:
       "Grâce au déploiement continu via Vercel, vous avez un accès constant à une prévisualisation en temps réel.",
     src: "/images/about/stair.svg",
   },
   {
+    key: 3,
     title: "Livraison du projet",
     subtitle:
       "Livraison du projet avec possibilité d'effectuer plusieurs allers-retours pour ajuster les dernières modifications.",
@@ -48,7 +51,10 @@ export const DevCard = ({ i = 3 }) => {
         </h2>
         <ul role="list">
           {people.map((person) => (
-            <li className="flex flex-col gap-10 pt-12 sm:flex-row">
+            <li
+              key={person.key}
+              className="flex flex-col gap-10 pt-12 sm:flex-row"
+            >
               <Image alt="" src={person.src} height={90} width={90} />
 
               <div className="max-w-xl flex-auto">

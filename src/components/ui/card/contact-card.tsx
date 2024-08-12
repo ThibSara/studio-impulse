@@ -7,17 +7,20 @@ import { useRef } from "react";
 
 const people = [
   {
+    key: 1,
     title: "Contactez-nous pour une première estimation",
     subtitle: "Remplissez le formulaire",
     src: "/images/about/bubble.svg",
   },
   {
+    key: 2,
     title: "Nous vous recontactons rapidement",
     subtitle:
       "Nous vous recontacterons rapidement pour mieux comprendre vos objectifs.",
     src: "/images/about/lightning.svg",
   },
   {
+    key: 3,
     title: "Devis",
     subtitle:
       "Nous vous fournirons ensuite un devis détaillé, un calendrier prévisionnel, ainsi qu'un moodboard personnalisé.",
@@ -47,7 +50,10 @@ export const ContactCard = ({ i = 1 }) => {
         </h2>
         <ul role="list">
           {people.map((person) => (
-            <li className="flex flex-col gap-10 pt-12 sm:flex-row">
+            <li
+              key={person.key}
+              className="flex flex-col gap-10 pt-12 sm:flex-row"
+            >
               <Image alt="" src={person.src} height={90} width={90} />
 
               <div className="max-w-xl flex-auto">

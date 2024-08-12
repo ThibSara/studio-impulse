@@ -47,8 +47,8 @@ export const UxCard = ({ i = 2 }) => {
           Étude UX et Design
         </h2>
         <ul role="list">
-          {people.map((person) => (
-            <li className="flex flex-col gap-10 pt-12 sm:flex-row">
+          {people.map((person, index) => (
+            <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
               <Image alt="" src={person.src} height={90} width={90} />
 
               <div className="max-w-xl flex-auto">

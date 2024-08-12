@@ -121,7 +121,7 @@ export function HeroSection() {
             </div>
             {/* Title */}
             <div className="font-medium text-4xl text-gray-900 sm:text-6xl lg:text-7xl text-center">
-              <span>Envie d'un </span>
+              <span>Envie d&apos;un </span>
               <span
                 onMouseEnter={handleMouseEnter("title")}
                 onMouseLeave={handleMouseLeave}

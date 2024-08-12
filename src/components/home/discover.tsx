@@ -94,7 +94,7 @@ export function Discover() {
             </h1>
             <p className="text-base leading-8 text-slate-50 sm:max-w-md max-w-xs text-center">
               Notre équipe de designers crée une maquette de votre site qui
-              reflète au mieux votre image. Vous aurez l'opportunité de la
+              reflète au mieux votre image. Vous aurez l&apos;opportunité de la
               valider avant la phase de développement.
             </p>
             <motion.div
@@ -133,8 +133,8 @@ export function Discover() {
             </h1>
             <p className="text-base leading-8 text-slate-50 sm:max-w-md max-w-xs text-center">
               Ensemble, nous réalisons une étude préalable pour cerner les
-              besoins de vos utilisateurs. Cette analyse guidera l'UX et l'UI de
-              votre site web.
+              besoins de vos utilisateurs. Cette analyse guidera l&apos;UX et
+              l&apos;UI de votre site web.
             </p>
             <div className="text-primary flex flex-row gap-x-4 mt-4">
               <div className="bg-white p-4 rounded-xl">
@@ -185,10 +185,10 @@ export function Discover() {
             </h1>
             <p className="text-base leading-8 text-slate-50 sm:max-w-md max-w-xs">
               Nous intégrons les fonctionnalités essentielles à votre site web
-              selon vos besoins. Profitez d'un chatbot IA pour une interaction
-              client optimisée, d'un tableau de bord analytique pour suivre vos
-              ventes, ou d'un Content Management System (CMS) pour gérer
-              facilement votre contenu.
+              selon vos besoins. Profitez d&apos;un chatbot IA pour une
+              interaction client optimisée, d&apos;un tableau de bord analytique
+              pour suivre vos ventes, ou d&apos;un Content Management System
+              (CMS) pour gérer facilement votre contenu.
             </p>
           </div>
           <div className="h-auto sm:h-[320px] bg-[#C4DCFF] rounded-xl flex flex-col items-center text-center p-8">
@@ -197,7 +197,7 @@ export function Discover() {
             </h1>
             <div className=" mt-4">
               <p className="text-base leading-8 text-[#06193A] ">
-                Faites estimer votre projet gratuitement par l'un de nos
+                Faites estimer votre projet gratuitement par l&apos;un de nos
                 experts.
               </p>
               <div className="mt-8">
