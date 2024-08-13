@@ -48,7 +48,7 @@ export const TeamCard: React.FC<CardProps> = ({ i = 4 }) => {
   return (
     <div className={styles.cardContainer}>
       <div
-        className="flex flex-col  relative w-full h-[700px] mx-16 rounded-2xl p-8 py-16 bg-[#3b4962]"
+        className="flex flex-col  relative w-full h-[700px] rounded-2xl p-8 py-16 bg-[#3b4962]"
         style={{ top: `calc(-5vh + ${i * 25}px)` }}
       >
         <h2 className="font-medium text-3xl text-white sm:text-5xl lg:text-6xl">

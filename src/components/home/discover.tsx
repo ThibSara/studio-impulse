@@ -3,23 +3,15 @@ import { HoverButton } from "../ui/hover-button/hoverButton";
 import Image from "next/image";
 import { Laugh, PenTool, Smile, Spline } from "lucide-react";
 import { Notifications } from "../ui/notifications";
-import { useCursor } from "./../cursor/CursorContext";
+import { useCursor } from "../cursor/CursorContext";
 import { motion } from "framer-motion";
 
 export function Discover() {
   const { setVariant } = useCursor();
   const [animateIconIndex, setAnimateIconIndex] = useState(0);
 
-  const handleMouseEnterTitle = () => {
-    setVariant("title");
-  };
-
-  const handleMouseEnterWireframe = () => {
-    setVariant("wireframe");
-  };
-
-  const handleMouseEnterSection = () => {
-    setVariant("section");
+  const handleMouseEnter = (variant: string) => () => {
+    setVariant(variant);
   };
 
   const handleMouseLeave = () => {
@@ -69,24 +61,26 @@ export function Discover() {
     <section
       id="discover"
       aria-labelledby="discover-title"
-      className="scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-14 py-16  sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
-      <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
-        Découvrez Nos
-        <span
-          onMouseEnter={handleMouseEnterTitle}
-          onMouseLeave={handleMouseLeave}
-          className="text-primary"
-        >
-          {" "}
-          Services
-        </span>
-      </div>
+      <header>
+        <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
+          Découvrez Nos
+          <span
+            onMouseEnter={handleMouseEnter("title")}
+            onMouseLeave={handleMouseLeave}
+            className="text-primary"
+          >
+            {" "}
+            Services
+          </span>
+        </div>
+      </header>
       <div className="py-12 grid grid-cols-1 gap-8 md:grid-cols-2 mt-8">
         <div className="space-y-8">
           <div
             className="h-auto sm:h-[600px] bg-[#06193A] rounded-xl flex flex-col items-center p-8"
-            onMouseEnter={handleMouseEnterWireframe}
+            onMouseEnter={handleMouseEnter("wireframe")}
             onMouseLeave={handleMouseLeave}
           >
             <h1 className="text-white text-2xl sm:text-4xl pt-8 pb-4 font-medium">
@@ -101,13 +95,14 @@ export function Discover() {
               animate={circlePath}
               whileHover={{ scale: 1.1, rotate: 3 }}
             >
-              <Image
-                alt="user"
-                src={"/images/wireframe.png"}
-                height={250}
-                width={250}
-                className="mt-8 sm:mt-32"
-              />
+              <div className=" mt-8 sm:mt-32 w-[150px] h-[150px] sm:w-[250px] sm:h-[250px]">
+                <Image
+                  alt="user"
+                  src={"/images/wireframe.png"}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             </motion.div>
           </div>
 
@@ -124,7 +119,7 @@ export function Discover() {
         </div>
         <div className="space-y-8">
           <div
-            onMouseEnter={handleMouseEnterSection}
+            onMouseEnter={handleMouseEnter("section")}
             onMouseLeave={handleMouseLeave}
             className="h-auto sm:h-[320px] bg-primary rounded-xl flex flex-col items-center p-8 relative"
           >

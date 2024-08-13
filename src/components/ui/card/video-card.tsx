@@ -18,7 +18,7 @@ export const VideoCard = ({ i = 5 }) => {
   return (
     <div className={styles.cardContainer}>
       <div
-        className="flex flex-col relative w-full h-[700px] mx-16 rounded-2xl bg-[#06193A]"
+        className="flex flex-col relative w-full h-[700px]  rounded-2xl bg-[#06193A]"
         style={{ top: `calc(-5vh + ${i * 25}px)` }}
         ref={container}
       >

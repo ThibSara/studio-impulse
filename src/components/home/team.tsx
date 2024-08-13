@@ -1,8 +1,3 @@
-import { useState, useEffect } from "react";
-import { HoverButton } from "../ui/hover-button/hoverButton";
-import Image from "next/image";
-import { Laugh, PenTool, Smile, Spline } from "lucide-react";
-import { Notifications } from "../ui/notifications";
 import { useCursor } from "./../cursor/CursorContext";
 import { motion } from "framer-motion";
 
@@ -26,8 +21,8 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Léonard Roussard",
-    role: "Ingénieure web design & dev",
+    name: "Cassie Doguet",
+    role: "Ingénieure UX design",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
     bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
@@ -39,16 +34,8 @@ const people = [
 export function Team() {
   const { setVariant } = useCursor();
 
-  const handleMouseEnterTitle = () => {
-    setVariant("title");
-  };
-
-  const handleMouseEnterWireframe = () => {
-    setVariant("wireframe");
-  };
-
-  const handleMouseEnterSection = () => {
-    setVariant("section");
+  const handleMouseEnter = (variant: string) => () => {
+    setVariant(variant);
   };
 
   const handleMouseLeave = () => {
@@ -57,53 +44,43 @@ export function Team() {
 
   return (
     <section
-      id="discover"
-      aria-labelledby="discover-title"
-      className="scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      id="team"
+      aria-labelledby="team"
+      className="scroll-mt-14 py-16  sm:scroll-mt-32 sm:py-20 lg:py-32 min-h-screen "
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20  xl:grid-cols-5">
-        <div className="max-w-2xl xl:col-span-2">
-          <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
-            Notre
-            <span
-              onMouseEnter={handleMouseEnterTitle}
-              onMouseLeave={handleMouseLeave}
-              className="text-primary"
-            >
-              {" "}
-              équipe
-            </span>
-          </div>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what
-            we do and dedicated to delivering the best results for our clients.
-          </p>
+      <header>
+        <div className="font-medium text-3xl sm:text-5xl lg:text-6xl">
+          Rencontrez notre
+          <span
+            onMouseEnter={handleMouseEnter("title")}
+            onMouseLeave={handleMouseLeave}
+            className="text-primary"
+          >
+            {" "}
+            équipe
+          </span>
         </div>
-        <ul
-          role="list"
-          className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3"
-        >
-          {people.map((person) => (
-            <li
-              key={person.name}
-              className="flex flex-col gap-10 pt-12 sm:flex-row"
-            >
-              <img
-                alt=""
-                src={person.imageUrl}
-                className=" w-44 flex-none rounded-2xl object-cover"
-              />
-              <div className="max-w-xl flex-auto">
-                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+      </header>
+      <div className="justify-center">
+        <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+          <ul
+            role="list"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          >
+            {people.map((person) => (
+              <li key={person.name}>
+                <img
+                  alt=""
+                  src={person.imageUrl}
+                  className="mx-auto h-56 w-56 rounded-full"
+                />
+                <h3 className="mt-6 text-md font-semibold leading-7 tracking-tight text-gray-900">
                   {person.name}
                 </h3>
-                <p className="text-base leading-7 text-gray-600">
+                <p className="text-base leading-6 text-gray-600">
                   {person.role}
                 </p>
-                <p className="mt-4 text-base leading-7 text-gray-600">
-                  {person.bio}
-                </p>
-                <ul role="list" className="mt-4 flex gap-x-6">
+                <ul role="list" className="mt-6 flex justify-center gap-x-6">
                   <li>
                     <a
                       href={person.xUrl}
@@ -141,10 +118,10 @@ export function Team() {
                     </a>
                   </li>
                 </ul>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

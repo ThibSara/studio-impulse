@@ -3,12 +3,8 @@ import { useCursor } from "./../cursor/CursorContext";
 export function Introduction() {
   const { setVariant } = useCursor();
 
-  const handleMouseEnterTitle = () => {
-    setVariant("title");
-  };
-
-  const handleMouseEnterSubtitle = () => {
-    setVariant("subtitle");
+  const handleMouseEnter = (variant: string) => () => {
+    setVariant(variant);
   };
 
   const handleMouseLeave = () => {
@@ -16,13 +12,13 @@ export function Introduction() {
   };
 
   return (
-    <section id="introduction" aria-label="Introduction" className="max-w-8xl">
-      <div className=" bg-[#07183B] mx-8 my-16 flex  rounded-3xl min-h-screen">
+    <section id="introduction" aria-label="Introduction">
+      <div className=" bg-[#07183B] my-16 flex  rounded-3xl min-h-screen">
         <div className="max-w-xl px-4 py-24">
           <div className="font-medium text-3xl text-white sm:text-5xl lg:text-6xl">
             Du design à la <br />
             <span
-              onMouseEnter={handleMouseEnterTitle}
+              onMouseEnter={handleMouseEnter("title")}
               onMouseLeave={handleMouseLeave}
               className="text-primary"
             >

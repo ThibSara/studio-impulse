@@ -36,7 +36,7 @@ export function HeroSection() {
               {...motionConfig}
               whileHover={{ ...motionConfig.whileHover, rotate: 3 }}
               whileTap={{ ...motionConfig.whileTap, rotate: 3 }}
-              className="absolute bottom-20 right-20"
+              className="absolute bottom-20 right-12"
             >
               <div className="w-[110px] h-[190px] sm:w-[190px] sm:h-[110px]">
                 <Image
@@ -52,7 +52,7 @@ export function HeroSection() {
               {...motionConfig}
               whileHover={{ ...motionConfig.whileHover, rotate: 6 }}
               whileTap={{ ...motionConfig.whileTap, rotate: 6 }}
-              className="absolute top-32 left-10"
+              className="absolute top-28 left-2"
             >
               <div className="w-[110px] h-[110px] sm:w-[190px] sm:h-[130px]">
                 <Image
@@ -74,7 +74,7 @@ export function HeroSection() {
                 </mask>
               </defs>
             </svg>
-            <div className=" absolute bottom-8 left-8 w-[240px] h-[241px] hidden md:block">
+            <div className=" absolute bottom-8 left-0 w-[240px] h-[241px] hidden md:block">
               <video
                 autoPlay
                 loop
@@ -102,7 +102,7 @@ export function HeroSection() {
                 </mask>
               </defs>
             </svg>
-            <div className=" absolute top-8 right-8 w-[240px] h-[241px] hidden md:block">
+            <div className=" absolute top-8 right-0 w-[240px] h-[241px] hidden md:block">
               <video
                 autoPlay
                 loop
