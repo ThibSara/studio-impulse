@@ -18,7 +18,8 @@ export function Introduction() {
           </div>
           <p className="mt-6 text-lg sm:text-xl leading-8 text-white sm:max-w-lg max-w-xs">
             <span className="text-xl sm:text-2xl">
-              L'innovation naît de l'équilibre entre l'art et la technologie.
+              L&apos;innovation naît de l&apos;équilibre entre l&apos;art et la
+              technologie.
               <br />
             </span>{" "}
             Nous combinons une approche créative avec une maîtrise technique
