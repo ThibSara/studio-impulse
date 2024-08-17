@@ -133,27 +133,14 @@ export function HeroSection() {
             </div>
             {/* Subtitle */}
             <div className="flex justify-center">
-              <p className="mt-6 text-lg sm:text-xl leading-8 text-gray-600 sm:max-w-md max-w-xs text-center">
-                Impulse combine l&apos;
-                <span
-                  onMouseEnter={handleMouseEnter("subtitle")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  UX design{" "}
-                </span>
-                et le{" "}
-                <span
-                  onMouseEnter={handleMouseEnter("subtitle")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  developpement web{" "}
-                </span>
-                pour offrir des solutions digitales complètes.
+              <p className="mt-6 text-lg sm:text-xl leading-8 text-gray-600 sm:max-w-lg max-w-xs text-center">
+                Impulse est une agence de design et développement, passionnée
+                par la création de sites web qui marquent les esprits.
               </p>
             </div>
             {/* Button */}
             <div className="mt-10 flex justify-center items-center gap-x-6">
-              <HoverButton href="/contact" content="votre projet" />
+              <HoverButton href="/contact" content="Votre site web" />
             </div>
           </FadeIn>
         </div>
