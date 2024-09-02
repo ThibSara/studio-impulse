@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 
 export function Introduction() {
-  const constraintsRef = useRef(null);
-
   return (
     <section id="introduction" aria-label="Introduction">
       <div className="relative isolate overflow-hidden bg-[#07183B] rounded-3xl  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">

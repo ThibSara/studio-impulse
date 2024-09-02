@@ -19,10 +19,13 @@ export default function LandingPage() {
           <HeroSection />
           <Introduction />
           <Discover />
+          <About />
+          {/*
           <Stack />
+          
           <About />
           <Team />
-          <CTA />
+          <CTA />*/}
         </CursorProvider>
       </div>
     </div>
