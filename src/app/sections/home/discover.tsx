@@ -57,7 +57,7 @@ export function Discover() {
   };
 
   return (
-    <section id="discover" className="pt-16 sm:pt-20">
+    <section id="discover" className="pt-16 sm:pt-20 lg:pt-32">
       <header>
         <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
           Simple, Rapide,
@@ -71,7 +71,7 @@ export function Discover() {
           </span>
         </div>
       </header>
-      <div className="pt-8 sm:pt-20  grid grid-cols-1 gap-8 lg:grid-cols-2 mt-8">
+      <div className="pt-8 sm:pt-12 lg:pt-28  grid grid-cols-1 gap-8 lg:grid-cols-2 mt-8">
         <div className="space-y-8">
           <div
             onMouseEnter={handleMouseEnter("section")}
@@ -191,7 +191,7 @@ export function Discover() {
               <div className=" mt-8 sm:mt-32 w-[150px] h-[150px] xl:w-[250px] xl:h-[250px]">
                 <Image
                   alt="user"
-                  src={"/images/home/discover/wireframe.png"}
+                  src={"/images/home/discover/wireframe.avif"}
                   layout="fill"
                   objectFit="contain"
                 />

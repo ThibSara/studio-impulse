@@ -16,7 +16,7 @@ export function About() {
     setVariant("default");
   };
   return (
-    <main className=" pt-16 sm:pt-20 lg:pt-32">
+    <section id="services" className=" pt-12 sm:pt-16 lg:pt-32">
       <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
         Découvrez Nos
         <span
@@ -28,12 +28,12 @@ export function About() {
           Services
         </span>
       </div>
-      <div className="pt-8 sm:pt-0 ">
+      <div className="pt-8 sm:pt-16 ">
         <ContactCard />
         <UxCard />
         <DevCard />
         <VideoCard />
       </div>
-    </main>
+    </section>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./RoundLogo.module.scss";
+import { PAGES_NAMES } from "@/app/constants/PAGES_NAMES";
 
 export const RoundLogo: React.FC = () => {
   return (
     <div>
-      <a href="#" className={styles.link}>
+      <a href={PAGES_NAMES.HOME.href} className={styles.link}>
         <svg
           viewBox="0 0 200 200"
           width="200"

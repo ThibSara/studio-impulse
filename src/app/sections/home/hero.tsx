@@ -25,6 +25,7 @@ export function HeroSection() {
 
   return (
     <section
+      id="home"
       className="w-full flex min-h-screen justify-center items-center relative"
       style={{ minHeight: "calc(100vh - 5rem)" }}
     >
