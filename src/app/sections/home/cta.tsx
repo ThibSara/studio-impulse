@@ -1,5 +1,4 @@
 import { useCursor } from "@/components/cursor/CursorContext";
-import { Testimonial } from "@/components/ui/testimonial";
 import { HoverButton } from "@/components/ui/hover-button/hoverButton";
 
 export function CTA() {
@@ -36,7 +35,6 @@ export function CTA() {
         <div className="mt-10 flex justify-center items-center gap-x-6">
           <HoverButton href="/contact" content="votre projet" />
         </div>
-        <Testimonial />
       </div>
     </section>
   );
