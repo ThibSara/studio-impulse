@@ -1,7 +1,16 @@
-import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useCursor } from "../cursor/CursorContext";
 
 export function Introduction() {
+  const { setVariant } = useCursor();
+
+  const handleMouseEnter = (variant: string) => () => {
+    setVariant(variant);
+  };
+
+  const handleMouseLeave = () => {
+    setVariant("default");
+  };
+
   return (
     <section id="introduction" aria-label="Introduction">
       <div className="relative isolate overflow-hidden bg-[#07183B] rounded-3xl  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -13,7 +22,14 @@ export function Introduction() {
                 <h1 className="font-medium text-3xl text-white sm:text-5xl lg:text-6xl">
                   Entre créativité <br />
                   et
-                  <span className="text-primary"> technologies</span>
+                  <span
+                    onMouseEnter={handleMouseEnter("title")}
+                    onMouseLeave={handleMouseLeave}
+                    className="text-primary"
+                  >
+                    {" "}
+                    technologies
+                  </span>
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-white">
                   Chez Impulse nous pensons que L&apos;innovation naît de

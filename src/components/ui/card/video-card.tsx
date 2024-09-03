@@ -37,11 +37,10 @@ export const VideoCard = ({ i = 5 }) => {
           <source src="./videos/people-talking.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex justify-center items-center flex-col">
-          <span className="text-white text-base mb-4">
-            {" "}
+          <h2 className="text-2xl lg:text-4xl tracking-tight text-white sm:text-4xl lg:pb-16">
             Faites estimer votre projet maintenant
-          </span>
-          <HoverButton href="/contact" content="votre projet" />
+          </h2>
+          <HoverButton href="/contact" content="Votre Projet" />
         </div>
       </div>
     </div>

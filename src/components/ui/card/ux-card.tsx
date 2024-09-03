@@ -1,70 +1,92 @@
-"use client";
 import styles from "./card.module.scss";
 import { useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
-
 import { useRef } from "react";
-
-const people = [
-  {
-    title: "Experience utilisateur",
-    subtitle:
-      "Nous réalisons une étude approfondie de l'expérience utilisateur (UX).",
-    src: "/images/about/target.svg",
-  },
-  {
-    title: "Maquette",
-    subtitle:
-      "Nous revenons vers vous avec une maquette complète de votre futur site web",
-    src: "/images/about/spark.svg",
-  },
-  {
-    title: "fonctionnalités additionnelles",
-    subtitle:
-      "En fonction de vos besoins et de ceux de vos utilisateurs, nous proposons également des services de rebranding, l'intégration de chatbots, d'IA, de tableaux de bord, de CMS, et bien plus encore.",
-    src: "/images/about/flower.svg",
-  },
-];
+import { motion } from "framer-motion";
 
 export const UxCard = ({ i = 2 }) => {
-  const container = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: container,
-
-    offset: ["start end", "start start"],
-  });
-
-  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+  const iconAnimation = {
+    whileHover: { scale: 1.2, rotate: 90 },
+    whileTap: {
+      scale: 0.8,
+      rotate: -90,
+      borderRadius: "100%",
+    },
+    animate: {
+      rotate: 360,
+      scale: 1.2,
+    },
+    transition: {
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+    },
+  };
 
   return (
     <div className={styles.cardContainer}>
       <div
-        className="flex flex-col  relative w-full h-[700px]  rounded-2xl p-8 py-16 bg-[#C4DCFF]"
+        className="relative w-full lg:h-[700px] h-[950px] rounded-2xl p-8 py-16  bg-[#C4DCFF] grid grid-cols-1 lg:grid-cols-2 gap-8"
         style={{ top: `calc(-5vh + ${i * 25}px)` }}
       >
-        <h2 className="font-medium text-3xl text-[#06193A] sm:text-5xl lg:text-6xl">
-          Étude UX et Design
-        </h2>
-        <ul role="list">
-          {people.map((person, index) => (
-            <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
-              <Image alt="" src={person.src} height={90} width={90} />
+        {/* Text Section */}
+        <div className="relative">
+          <h2 className="text-2xl lg:text-4xl tracking-tight text-black sm:text-4xl lg:pb-16">
+            Partagez nous vos idées
+          </h2>
+          <div className=" leading-8 text-black md:mr-8 text-base tracking-tight ">
+            <div className=" mt-8 bg-white p-2 px-3 md:p-3 md:px-4 rounded-xl mr-2 md:mr-4 flex items-center">
+              <motion.div
+                whileHover={iconAnimation.whileHover}
+                whileTap={iconAnimation.whileTap}
+                transition={iconAnimation.transition}
+                className="mr-2"
+              >
+                💛
+              </motion.div>
+              Complétez notre formulaire pour nous donner un aperçu clair de vos
+              besoins et attentes.
+            </div>
+            <div className="mt-4 md:mt-8 bg-white p-2 px-3 md:p-3 md:px-4 rounded-xl mr-2 md:mr-4 flex items-center">
+              {" "}
+              <motion.div
+                whileHover={iconAnimation.whileHover}
+                whileTap={iconAnimation.whileTap}
+                transition={iconAnimation.transition}
+                className="mr-2"
+              >
+                💛
+              </motion.div>
+              Nous vous contacterons dans les plus brefs délais pour discuter de
+              vos objectifs en profondeur.
+            </div>
+            <div className="mt-4 md:mt-8 bg-white p-2 px-3 md:p-3 md:px-4 rounded-xl mr-2 md:mr-4 flex items-center">
+              {" "}
+              <motion.div
+                whileHover={iconAnimation.whileHover}
+                whileTap={iconAnimation.whileTap}
+                transition={iconAnimation.transition}
+                className="mr-2"
+              >
+                💛
+              </motion.div>
+              Nous vous fournirons un devis détaillé, un calendrier prévisionnel
+              et un moodboard sur mesure pour visualiser le style de votre futur
+              site.
+            </div>
+          </div>
+        </div>
 
-              <div className="max-w-xl flex-auto">
-                <div className="flex flex-row items-center">
-                  <h3 className="text-lg font-medium leading-8 tracking-tight text-black">
-                    {person.title}
-                  </h3>
-                </div>
-
-                <p className="text-base leading-7 text-slate-700">
-                  {person.subtitle}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        {/* Image Section */}
+        <div className="relative flex justify-center items-center">
+          <Image
+            alt="laptop"
+            src={"/images/resources/mockup.png"}
+            height={900}
+            width={900}
+            className="rounded-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+          />
+        </div>
       </div>
     </div>
   );
