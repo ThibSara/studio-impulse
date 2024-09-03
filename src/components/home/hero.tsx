@@ -140,7 +140,7 @@ export function HeroSection() {
             </div>
             {/* Button */}
             <div className="mt-10 flex justify-center items-center gap-x-6">
-              <HoverButton href="/contact" content="Votre site web" />
+              <HoverButton href="/contact" content="Votre Site Web" />
             </div>
           </FadeIn>
         </div>

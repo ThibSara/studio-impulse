@@ -32,7 +32,7 @@ export const UxCard = ({ i = 2 }) => {
         {/* Text Section */}
         <div className="relative">
           <h2 className="text-2xl lg:text-4xl tracking-tight text-black sm:text-4xl lg:pb-16">
-            Partagez nous vos idées
+            Expérience utilisateur et design
           </h2>
           <div className=" leading-8 text-black md:mr-8 text-base tracking-tight ">
             <div className=" mt-8 bg-white p-2 px-3 md:p-3 md:px-4 rounded-xl mr-2 md:mr-4 flex items-center">

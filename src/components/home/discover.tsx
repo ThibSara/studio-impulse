@@ -57,25 +57,21 @@ export function Discover() {
   };
 
   return (
-    <section
-      id="discover"
-      aria-labelledby="discover-title"
-      className="scroll-mt-14 py-16  sm:scroll-mt-32 sm:py-20 lg:py-32"
-    >
+    <section id="discover" className="pt-16 sm:pt-20">
       <header>
         <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
-          Découvrez Nos
+          Simple, Rapide,
           <span
             onMouseEnter={handleMouseEnter("title")}
             onMouseLeave={handleMouseLeave}
             className="text-primary"
           >
             {" "}
-            Services
+            Efficace
           </span>
         </div>
       </header>
-      <div className="py-12 grid grid-cols-1 gap-8 lg:grid-cols-2 mt-8">
+      <div className="pt-8 sm:pt-20  grid grid-cols-1 gap-8 lg:grid-cols-2 mt-8">
         <div className="space-y-8">
           <div
             onMouseEnter={handleMouseEnter("section")}
@@ -195,7 +191,7 @@ export function Discover() {
               <div className=" mt-8 sm:mt-32 w-[150px] h-[150px] xl:w-[250px] xl:h-[250px]">
                 <Image
                   alt="user"
-                  src={"/images/home/discover/wireframe.avif"}
+                  src={"/images/home/discover/wireframe.png"}
                   layout="fill"
                   objectFit="contain"
                 />

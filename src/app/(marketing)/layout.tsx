@@ -1,7 +1,4 @@
 import Footer from "@/components/footer";
-import { GradientBackground } from "@/components/gradient-background";
-import { GridPattern } from "@/components/home/hero-grid-pattern";
-import { Logo } from "@/components/ui/icon";
 import Link from "next/link";
 
 export default function MarketingLayout({

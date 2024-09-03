@@ -16,22 +16,24 @@ export function About() {
     setVariant("default");
   };
   return (
-    <main className="min-h-screen">
+    <main className=" pt-16 sm:pt-20 lg:pt-32">
       <div className="font-medium text-3xl text-black sm:text-5xl lg:text-6xl">
-        Simple, Rapide,
+        Découvrez Nos
         <span
           onMouseEnter={handleMouseEnter("title")}
           onMouseLeave={handleMouseLeave}
           className="text-primary"
         >
           {" "}
-          Efficace
+          Services
         </span>
       </div>
-      <ContactCard />
-      <UxCard />
-      <DevCard />
-      <VideoCard />
+      <div className="pt-8 sm:pt-0 ">
+        <ContactCard />
+        <UxCard />
+        <DevCard />
+        <VideoCard />
+      </div>
     </main>
   );
 }
