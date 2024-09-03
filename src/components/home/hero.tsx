@@ -41,7 +41,7 @@ export function HeroSection() {
               <div className="w-[110px] h-[190px] sm:w-[190px] sm:h-[110px]">
                 <Image
                   alt=""
-                  src={"/images/hero/flower.svg"}
+                  src={"/images/home/hero/flower.svg"}
                   layout="fill"
                   objectFit="contain"
                 />
@@ -57,7 +57,7 @@ export function HeroSection() {
               <div className="w-[110px] h-[110px] sm:w-[190px] sm:h-[130px]">
                 <Image
                   alt=""
-                  src={"/images/hero/arc.svg"}
+                  src={"/images/home/hero/arc.svg"}
                   layout="fill"
                   objectFit="contain"
                 />

@@ -147,7 +147,7 @@ export function Discover() {
             </p>
             <Image
               alt="laptop"
-              src={"/images/discover/laptop.png"}
+              src={"/images/home/discover/laptop.avif"}
               height={200}
               width={400}
             />
@@ -195,7 +195,7 @@ export function Discover() {
               <div className=" mt-8 sm:mt-32 w-[150px] h-[150px] xl:w-[250px] xl:h-[250px]">
                 <Image
                   alt="user"
-                  src={"/images/discover/wireframe.png"}
+                  src={"/images/home/discover/wireframe.avif"}
                   layout="fill"
                   objectFit="contain"
                 />

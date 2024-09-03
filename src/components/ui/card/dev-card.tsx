@@ -85,7 +85,7 @@ export const DevCard = ({ i = 3 }) => {
         <div className="relative flex justify-center items-center">
           <Image
             alt="laptop"
-            src={"/images/resources/device-mockup.png"}
+            src={"/images/home/resources/devices.avif"}
             height={900}
             width={900}
             className="rounded-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
