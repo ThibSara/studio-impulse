@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
-import { Discover } from "@/components/home/discover";
-import { HeroSection } from "@/components/home/hero";
-import { Introduction } from "@/components/home/introduction";
+import { Discover } from "@/app/sections/home/discover";
+import { HeroSection } from "@/app/sections/home/hero";
+import { Introduction } from "@/app/sections/home/introduction";
 import { Cursor } from "@/components/cursor/Cursor";
 import { CursorProvider } from "@/components/cursor/CursorContext";
-import { Stack } from "@/components/home/stack";
-import { About } from "@/components/home/about";
-import { Team } from "@/components/home/team";
-import { CTA } from "@/components/home/cta";
+import { Team } from "@/app/sections/home/team";
+import { CTA } from "@/app/sections/home/cta";
+import { About } from "@/app/sections/home/about";
 
 export default function LandingPage() {
   return (

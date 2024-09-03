@@ -1,4 +1,4 @@
-import { useCursor } from "./../cursor/CursorContext";
+import { useCursor } from "@/components/cursor/CursorContext";
 import { motion } from "framer-motion";
 
 const people = [

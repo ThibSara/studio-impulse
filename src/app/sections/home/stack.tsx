@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { HoverButton } from "../ui/hover-button/hoverButton";
+import { HoverButton } from "@/components/ui/hover-button/hoverButton";
 import Image from "next/image";
 import { Laugh, PenTool, Smile, Spline } from "lucide-react";
-import { Notifications } from "../ui/notifications";
-import { useCursor } from "./../cursor/CursorContext";
+import { Notifications } from "@/components/ui/notifications";
+import { useCursor } from "@/components/cursor/CursorContext";
 import { motion } from "framer-motion";
 import figmaImage from "@/images/resources/figma-image.jpg";
 

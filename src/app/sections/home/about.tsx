@@ -1,9 +1,9 @@
 "use client";
-import { ContactCard } from "../ui/card/contact-card";
-import { UxCard } from "../ui/card/ux-card";
-import { DevCard } from "../ui/card/dev-card";
-import { VideoCard } from "../ui/card/video-card";
-import { useCursor } from "../cursor/CursorContext";
+import { ContactCard } from "@/components/ui/card/contact-card";
+import { UxCard } from "@/components/ui/card/ux-card";
+import { DevCard } from "@/components/ui/card/dev-card";
+import { VideoCard } from "@/components/ui/card/video-card";
+import { useCursor } from "@/components/cursor/CursorContext";
 
 export function About() {
   const { setVariant } = useCursor();

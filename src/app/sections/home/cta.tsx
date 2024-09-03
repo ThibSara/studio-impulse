@@ -1,6 +1,6 @@
-import { useCursor } from "./../cursor/CursorContext";
-import { Testimonial } from "../ui/testimonial";
-import { HoverButton } from "../ui/hover-button/hoverButton";
+import { useCursor } from "@/components/cursor/CursorContext";
+import { Testimonial } from "@/components/ui/testimonial";
+import { HoverButton } from "@/components/ui/hover-button/hoverButton";
 
 export function CTA() {
   const { setVariant } = useCursor();
