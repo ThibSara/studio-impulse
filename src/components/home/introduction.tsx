@@ -59,32 +59,34 @@ export function Introduction() {
                   <li className="flex gap-x-3">
                     <span>
                       <strong className="font-semibold text-white">
-                        Push to deploy.
+                        Développement rapide
                       </strong>{" "}
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      Nous mettons en place un calendrier précis avec des dates
+                      clés pour chaque étape du projet.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
                     <span>
                       <strong className="font-semibold text-white">
-                        SSL certificates.
+                        Technologies de pointe
                       </strong>{" "}
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.
+                      Nous utilisons des CMS (systèmes de gestion de contenu)
+                      ainsi que de l&apos;IA pour faciliter la création et la
+                      gestion de votre site web.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
                     <span>
                       <strong className="font-semibold text-white">
-                        Database backups.
+                        Livraison clé en main
                       </strong>{" "}
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Votre site est livré déjà déployé et prêt à l&apos;emploi,
+                      pour que vous puissiez vous concentrer sur votre activité
+                      dès le premier jour.
                     </span>
                   </li>
                 </ul>
+
                 <p className="mt-8">
                   Vous êtes au cœur de chaque étape de la création de votre site
                   web. De la conception initiale au développement final, nous

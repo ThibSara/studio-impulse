@@ -18,7 +18,7 @@ export const VideoCard = ({ i = 5 }) => {
   return (
     <div className={styles.cardContainer}>
       <div
-        className="flex flex-col relative w-full h-[700px]  rounded-2xl bg-[#06193A]"
+        className="flex flex-col relative w-full lg:h-[700px] h-[900px] rounded-2xl bg-[#06193A]"
         style={{ top: `calc(-5vh + ${i * 25}px)` }}
         ref={container}
       >
@@ -37,7 +37,7 @@ export const VideoCard = ({ i = 5 }) => {
           <source src="./videos/people-talking.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex justify-center items-center flex-col">
-          <h2 className="text-2xl lg:text-4xl tracking-tight text-white sm:text-4xl lg:pb-16">
+          <h2 className="text-2xl lg:text-4xl tracking-tight text-white text-center sm:text-4xl lg:pb-16 mb-4">
             Faites estimer votre projet maintenant
           </h2>
           <HoverButton href="/contact" content="Votre Projet" />
